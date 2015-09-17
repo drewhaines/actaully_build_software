@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title Software
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .container-fluid
+      .row.navbar-default
+        .col-xs-9
+          %h2.cocomat ACTUALLY Build Software!
+        .col-xs-3
+          .pull-right.padding
+            = image_tag "menu.png", class: "menu_icon"
+      = yield
