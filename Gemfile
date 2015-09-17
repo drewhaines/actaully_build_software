@@ -29,6 +29,9 @@ gem 'haml-rails'
 
 gem 'mysql2'
 
+# Web server, also good for production
+gem "puma", group: :production
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
