@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'haml'
 gem 'haml-rails'
 
-gem 'mysql2'
+gem 'mysql'
 
 # Web server, also good for production
 gem "puma", group: :production
