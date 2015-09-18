@@ -27,10 +27,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'haml'
 gem 'haml-rails'
 
-gem 'mysql'
 
 # Web server, also good for production
-gem "puma", group: :production
+# gem "puma", group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -48,6 +47,8 @@ gem "puma", group: :production
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'rails_12factor', group: :production
+gem 'mysql', group: :production
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -62,6 +63,7 @@ group :development, :test do
   gem "dotenv-rails"
   gem 'dotenv-deployment', require: 'dotenv/deployment'
 
+  gem 'mysql2'
 
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

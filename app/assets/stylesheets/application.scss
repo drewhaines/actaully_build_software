@@ -53,6 +53,10 @@
   background-color: #ddffe2;
 }
 
+.bold{
+  font-weight: 700;
+}
+
 .padding{
   padding: 25px;
 }
@@ -78,7 +82,7 @@
 }
 
 .feature_image{
-  background-image: url(code.png);
+  background-image: image-url('code.png');
 }
 
 .menu_icon{
