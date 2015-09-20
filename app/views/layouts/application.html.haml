@@ -2,15 +2,23 @@
 %html
   %head
     %title Software
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
     .container-fluid
       .row.navbar-default
-        .col-xs-9
-          %h2.cocomat ACTUALLY Build Software!
-        .col-xs-3
-          .pull-right.padding
-            = image_tag "menu.png", class: "menu_icon"
+        .hidden-xs
+          .col-xs-9
+            %h2.cocomat ACTUALLY Build Software!
+          .col-xs-3
+            .pull-right.padding
+              = image_tag "menu.png", class: "menu_icon"
+        .visible-xs
+          .col-xs-9
+            %h2.cocomat.blog_title_xs ACTUALLY Build Software!
+          .col-xs-3
+            .pull-right.padding
+              = image_tag "menu.png", class: "menu_icon"
       = yield
