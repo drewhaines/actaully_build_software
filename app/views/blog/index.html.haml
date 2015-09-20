@@ -21,15 +21,15 @@
         %iframe{:allowfullscreen => "", :frameborder => "0", :height => "179", :width => "320",
           :src => "https://www.youtube.com/embed/Z79lCVdrDOM" }
         .space-30
-        .row
-          .col-xs-12.text-center.white
-            %h2.rounded.no_margin My College Education
-            %h2.rounded.margin_top Shared with YOU Online
+        .col-xs-12.text-center.white
+          %h2.rounded.no_margin My College Education
+          %h2.rounded.margin_top Shared with YOU Online
         .space-18
-        .row
-          .col-xs-12.text-center
-            = link_to "Free Crash Course", root_path, class: "btn-default btn-lg rounded padding_top"
-        .space-30
+        .col-xs-12.text-center
+          = link_to "Free Crash Course", root_path, class: "btn-default btn-lg rounded padding_top"
+        .col-xs-12
+          .space-30
+-# ********************************************************************************************************************
 .row
   .col-md-4.col-xs-12.text-center
     .space-10
@@ -76,19 +76,76 @@
     .row
       .col-xs-12
         .space-16
--#.row
--#  .col-xs-12.background.text-center
--#    %h3.halo.title Courses
--#    .row.text-center
--#      .col-xs-3
--#        .space-10
--#        %h3.rounded.title2 Crash Course
--#      .col-xs-3
--#        .space-10
--#        %h3.rounded.title2 C and Assembly
--#      .col-xs-3
--#        %h3.rounded.title2 Web Programming
--#      .col-xs-3
--#        .space-10
--#        %h3.rounded.title2 Ruby on Rails
--#
+-# *********************************************************************************************************************
+.row
+  .col-xs-12.courses_background.text-center
+    %h3.little_font.courses.title Courses
+    .row.text-center
+      -# ******************************************************************
+      .col-md-4.col-xs-12
+        .space-10
+        %h3.rounded.title2
+          %p.no_margin Intro To Programming
+          %p Crash Course
+        .col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
+          .hidden-xs
+            %p.intro
+          .visible-xs
+            %p.intro_xs
+          .space-30
+      -# ******************************************************************
+      .col-md-4.col-xs-12
+        .space-10
+        %h3.rounded.title2
+          %p C and Assembly
+          .space-20
+        .col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
+          .hidden-xs
+            %p.hex
+          .visible-xs
+            %p.hex_xs
+          .space-30
+      -# ******************************************************************
+      .col-md-4.col-xs-12
+        .space-10
+        %h3.rounded.title2
+          %p.no_margin Intro Web Apps
+          %p (Ruby on Rails)
+        .col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
+          .hidden-xs
+            %p.rails
+          .visible-xs
+            %p.rails_xs
+          .space-30
+      -# ******************************************************************
+      .col-md-4.col-xs-12
+        .space-10
+        %h3.rounded.title2
+          %p Software DESIGN
+        .col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
+          .hidden-xs
+            %p.design
+          .visible-xs
+            %p.design_xs
+        .space-30
+      -# ******************************************************************
+      .col-md-4.col-xs-12
+        .space-10
+        %h3.rounded.title2
+          %p How to Monetize
+        .col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
+          .hidden-xs
+            %p.make_money
+          .visible-xs
+            %p.make_money_xs
+        .space-30
+
+
+-# Preloaded images
+%p#preload_01
+%p#preload_02
+%p#preload_03
+%p#preload_04
+%p#preload_05
+
+

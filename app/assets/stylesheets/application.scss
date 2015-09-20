@@ -15,6 +15,14 @@
  */
 
 @font-face {
+  font-family: "Little";
+  src: asset-url("Little.ttf");
+}
+.little_font{
+  font-family: Little;
+}
+
+@font-face {
   font-family: "Halo";
   src: asset-url("Halo.otf");
 }
@@ -53,12 +61,236 @@
   background-color: #ddffe2;
 }
 
+.courses{
+  font-size: 4em !important;
+}
+
+.courses_menu{
+  font-size: 3em !important;
+  padding-left: 1em !important;
+}
+
+.menu_title_xs{
+  font-size: 1.5em;
+}
+
+.intro{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('intro_dark.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+
+.intro:hover{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('intro.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+.hex{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('hex_dark.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+
+.hex:hover{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('hex.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+.rails{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('rails_dark.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+
+.rails:hover{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('rails.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+.design{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('design_dark.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+
+.design:hover{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('design.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+.make_money{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('make_money_dark.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+
+.make_money:hover{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('make_money.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+.intro_xs{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('intro.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+
+.hex_xs{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('hex.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+.rails_xs{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('rails.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+
+
+.design_xs{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('design.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+
+.make_money_xs{
+  height: 100%;
+  padding-top: 100%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-image: image_url('make_money.png');
+  background-repeat: no-repeat;
+  background-size:   100% 100%;
+}
+
+
+
+#preload_01 { background: image_url('intro.png') no-repeat -9999px -9999px; }
+#preload_02 { background: image_url('hex.png') no-repeat -9999px -9999px; }
+#preload_03 { background: image_url('rails.png') no-repeat -9999px -9999px; }
+#preload_04 { background: image_url('design.png') no-repeat -9999px -9999px; }
+#preload_05 { background: image_url('make_money.png') no-repeat -9999px -9999px; }
+
+
+
+.courses_menu_xs{
+  font-size: 3em !important;
+}
+
+.inline{
+  display: inline-block;
+}
+
 .bold{
   font-weight: 700;
 }
 
 .padding{
   padding: 25px;
+}
+
+.padding2{
+  padding: 25px 30px 0 10px;
 }
 
 .no_padding{
@@ -118,6 +350,22 @@
 
 .black{
   color: black;
+}
+
+.menu_hidden{
+  display: none;
+  background-color: #e8e6e1;
+  border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0;
+  z-index: 10;
+}
+
+.courses_background{
+  background-color: cornsilk;
 }
 
 .space {

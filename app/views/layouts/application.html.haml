@@ -15,10 +15,66 @@
           .col-xs-3
             .pull-right.padding
               = image_tag "menu.png", class: "menu_icon"
+          .col-xs-3.menu_hidden
+            .pull-left.padding.inline
+              = image_tag "menu.png", class: "menu_icon"
+            .padding.inline
+              %h3.little_font.courses_menu.title.no_margin Courses
+            .rounded.menu_title_xs
+              .row
+                .space-20
+                .col-xs-12.text-center
+                  %p.no_margin Intro To Programming
+                  %p Crash Course
+              .space-12
+              .row
+                .col-xs-12.text-center
+                  C and Assembly
+              .space-12
+              .row
+                .col-xs-12.text-center
+                  %p.no_margin Intro Web Apps
+                  %p (Ruby on Rails)
+              .space-12
+              .row
+                .col-xs-12.text-center
+                  %p Software DESIGN
+              .space-12
+              .row
+                .col-xs-12.text-center
+                  %p How to Monetize
         .visible-xs
           .col-xs-9
             %h2.cocomat.blog_title_xs ACTUALLY Build Software!
           .col-xs-3
             .pull-right.padding
               = image_tag "menu.png", class: "menu_icon"
+          .col-xs-8.menu_hidden
+            .pull-left.padding2.inline
+              = image_tag "menu.png", class: "menu_icon"
+            .padding_top.inline
+              %h3.little_font.courses_menu_xs.title.no_margin Courses
+            .rounded.menu_title_xs
+              .row
+                .space-20
+                .col-xs-12.text-center
+                  %p.no_margin Intro To Programming
+                  %p Crash Course
+              .space-12
+              .row
+                .col-xs-12.text-center
+                  C and Assembly
+              .space-12
+              .row
+                .col-xs-12.text-center
+                  %p.no_margin Intro Web Apps
+                  %p (Ruby on Rails)
+              .space-12
+              .row
+                .col-xs-12.text-center
+                  %p Software DESIGN
+              .space-12
+              .row
+                .col-xs-12.text-center
+                  %p How to Monetize
       = yield
