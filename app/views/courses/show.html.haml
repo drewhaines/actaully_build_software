@@ -1,21 +1,39 @@
-%p#notice= notice
+- if flash[:alert]
+  %p#alert.alert= flash[:alert]
+- if flash[:notice] && flash[:alert].blank?
+  %p#notice.notice= flash[:notice]
 
-%p
-  %b Title:
-  = @course.title
-%p
-  %b Description:
-  = @course.description
-%p
-  %b Feature img:
-  = @course.feature_img
-%p
-  %b Small imgage:
-  = @course.small_imgage
-%p
-  %b Small dark imgage:
-  = @course.small_dark_imgage
+.row
+  .col-xs-12.no_padding
+    = image_tag @course.feature_img, class: 'full_width'
+.row
+  .col-xs-12.text-center
+    %h2.title.rounded= @course.title
+.row
+  .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-3
+    %p.text.black= @course.description
+%hr
+.row
+  .col-xs-12.no_padding.lessons
+    - @lessons.each_with_index do |lesson, index|
+      .space-20
+      .row
+        .col-xs-8.col-xs-offset-2
+          %h4.title2.rounded= "##{index+1} " + lesson.title
+      .space-12
+      .row
+        .col-xs-12
+          .text-center
+            .hidden-xs
+              %iframe{:allowfullscreen => "", :frameborder => "0", :height => "337", :width => "600",
+                :src => lesson.video }
+            .visible-xs
+              %iframe{:allowfullscreen => "", :frameborder => "0", :height => "179", :width => "320",
+                :src => lesson.video }
+      .space-16
+      .row
+        .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-3
+          %p.text.black= lesson.description
+      %hr
 
-= link_to 'Edit', edit_course_path(@course)
-\|
-= link_to 'Back', courses_path
+

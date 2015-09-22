@@ -12,5 +12,11 @@
   .field
     = f.label :video
     = f.text_field :video
+  .field
+    = f.label :description
+    = f.text_area :description
+  .field
+    = f.label :Course
+    = f.collection_select :course_id, Course.all, :id, :title
   .actions
     = f.submit 'Save'
