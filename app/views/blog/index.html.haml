@@ -87,11 +87,12 @@
         %h3.rounded.title2
           %p.no_margin Intro To Programming
           %p Crash Course
-        .col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
-          .hidden-xs
-            %p.intro
-          .visible-xs
-            %p.intro_xs
+        = link_to course_path(1) do
+          .col-sm-6.col-sm-offset-3.col-xs-8.col-xs-offset-2
+            .hidden-xs
+              %p.intro
+            .visible-xs
+              %p.intro_xs
           .space-30
       -# ******************************************************************
       .col-md-4.col-xs-12
@@ -99,11 +100,12 @@
         %h3.rounded.title2
           %p C and Assembly
           .space-20
-        .col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
-          .hidden-xs
-            %p.hex
-          .visible-xs
-            %p.hex_xs
+        = link_to course_path(2) do
+          .col-sm-6.col-sm-offset-3.col-xs-8.col-xs-offset-2
+            .hidden-xs
+              %p.hex
+            .visible-xs
+              %p.hex_xs
           .space-30
       -# ******************************************************************
       .col-md-4.col-xs-12
@@ -111,33 +113,37 @@
         %h3.rounded.title2
           %p.no_margin Intro Web Apps
           %p (Ruby on Rails)
-        .col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
-          .hidden-xs
-            %p.rails
-          .visible-xs
-            %p.rails_xs
+        = link_to course_path(3) do
+          .col-sm-6.col-sm-offset-3.col-xs-8.col-xs-offset-2
+            .hidden-xs
+              %p.rails
+            .visible-xs
+              %p.rails_xs
           .space-30
       -# ******************************************************************
+    .row.text-center
       .col-md-4.col-xs-12
         .space-10
         %h3.rounded.title2
           %p Software DESIGN
-        .col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
-          .hidden-xs
-            %p.design
-          .visible-xs
-            %p.design_xs
+        = link_to course_path(4) do
+          .col-sm-6.col-sm-offset-3.col-xs-8.col-xs-offset-2
+            .hidden-xs
+              %p.design
+            .visible-xs
+              %p.design_xs
         .space-30
       -# ******************************************************************
       .col-md-4.col-xs-12
         .space-10
         %h3.rounded.title2
           %p How to Monetize
-        .col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
-          .hidden-xs
-            %p.make_money
-          .visible-xs
-            %p.make_money_xs
+        = link_to course_path(5) do
+          .col-sm-6.col-sm-offset-3.col-xs-8.col-xs-offset-2
+            .hidden-xs
+              %p.make_money
+            .visible-xs
+              %p.make_money_xs
         .space-30
 
 

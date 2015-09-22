@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @course.title
+%p
+  %b Description:
+  = @course.description
+%p
+  %b Feature img:
+  = @course.feature_img
+%p
+  %b Small imgage:
+  = @course.small_imgage
+%p
+  %b Small dark imgage:
+  = @course.small_dark_imgage
+
+= link_to 'Edit', edit_course_path(@course)
+\|
+= link_to 'Back', courses_path
