@@ -12,7 +12,7 @@
           %h2.rounded.title.margin_top Shared with YOU Online
         .space-18
         .col-xs-12.text-center
-          = link_to "Free Crash Course", root_path, class: "btn btn-default btn-lg rounded padding_top"
+          = link_to "Free Crash Course", course_path(1), class: "btn btn-default btn-lg rounded padding_top"
         .col-xs-12
           .space-30
     .visible-xs
@@ -22,11 +22,12 @@
           :src => "https://www.youtube.com/embed/YFjHS9LwecA" }
         .space-30
         .col-xs-12.text-center.white
-          %h2.rounded.no_margin My College Education
-          %h2.rounded.margin_top Shared with YOU Online
-        .space-18
+          %h2.rounded.no_margin.small_title My College Education
+          %h2.rounded.margin_top.small_title Shared with YOU Online
+        .col-xs-12
+          .space-18
         .col-xs-12.text-center
-          = link_to "Free Crash Course", root_path, class: "btn-default btn-lg rounded padding_top"
+          = link_to "Free Crash Course", course_path(1), class: "btn-default btn-lg rounded padding_top"
         .col-xs-12
           .space-30
 -# ********************************************************************************************************************

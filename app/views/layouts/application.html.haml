@@ -27,10 +27,9 @@
             .rounded.menu_title_xs
               - @courses.each do |course|
                 .row
-                  .space-20
+                  .space-10
                   .col-xs-12.text-center
                     = link_to course.title, course_path(course)
-                .space-12
         .visible-xs
           .col-xs-9
             = link_to root_path do
@@ -50,10 +49,9 @@
               .row
                 - @courses.each do |course|
                   .row
-                    .space-20
+                    .space-10
                     .col-xs-12.text-center
                       = link_to course.title, course_path(course)
-                  .space-12
       = yield
 
 :javascript
