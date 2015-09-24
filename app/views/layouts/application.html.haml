@@ -30,6 +30,17 @@
                   .space-10
                   .col-xs-12.text-center
                     = link_to course.title, course_path(course)
+            .space-10
+            .row
+              .col-xs-12.rounded.text-center.menu_title_xs
+                - if user_signed_in?
+                  = link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link'
+                  |
+                  \#{link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'}
+                - else
+                  = link_to "Sign up", new_user_registration_path, :class => 'navbar-link'
+                  |
+                  \#{link_to "Login", new_user_session_path, :class => 'navbar-link'}
         .visible-xs
           .col-xs-9
             = link_to root_path do
@@ -52,6 +63,18 @@
                     .space-10
                     .col-xs-12.text-center
                       = link_to course.title, course_path(course)
+            .space-10
+            .row
+              .col-xs-12.rounded.text-center.menu_title_xs
+                - if user_signed_in?
+                  Logged in as
+                  = link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link'
+                  |
+                  \#{link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'}
+                - else
+                  = link_to "Sign up", new_user_registration_path, :class => 'navbar-link'
+                  |
+                  \#{link_to "Login", new_user_session_path, :class => 'navbar-link'}
       = yield
 
 :javascript
